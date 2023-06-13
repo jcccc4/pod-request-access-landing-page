@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@100;400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Pod request access landing page</title>
+  </head>
+  <body class="bg-main">
+    <main
+      class="flex flex-col items-center w-screen md:items-start lg:my-[130px] lg:ml-[165px] relative"
+    >
+      <img
+        class="opacity-10 absolute left-0 top-0 w-screen h-auto -z-10 md:w-[491px] md:h-[767px] md:left-[277px] md:opacity-100 lg:hidden"
+        src="./assets/mobile/image-host.jpg"
+        alt="Background Images"
+      />
+      <img
+        class="hidden lg:absolute lg:block lg:ml-[387px] lg:w-[888px] lg:h-[640px] -z-10"
+        src="./assets/desktop/image-host.jpg"
+        alt="Background Images"
+      />
+
+      <img
+        class="mx-auto mt-[62px] md:mt-[50px] md:ml-[39px] lg:-mt-7"
+        src="./assets/desktop/logo.svg"
+        alt="Background Images"
+      />
+
+      <section
+        class="flex flex-col w-[327px] mt-[57px] md:bg-main md:ml-[39px] md:w-[635px] md:mt-[152px] lg:w-[723px] lg:h-[509px]"
+      >
+        <section class="md:mt-[93px] lg:mt-[88px] lg:mr-[58px]">
+          <section
+            class="text-quote uppercase text-[#54E6AF] text-center md:text-left md:text-quote-md lg:text-quote-lg"
+          >
+            Publish your podcasts <span class="text-white">everywhere.</span>
+          </section>
+          <section
+            class="text-center mt-4 md:text-left md:text-des-md md:mr-[190px] md:mt-[31px] lg:mt-8"
+          >
+            Upload your audio to Pod with a single click. We&apos;ll then
+            distribute your podcast to Spotify, Apple Podcasts, Google Podcasts,
+            Pocket Casts and more!
+          </section>
+        </section>
+        <section class="md:flex md:flex-col-reverse">
+          <section
+            class="flex justify-between items-center mt-[33px] md:mr-[99px] md:mt-16"
+          >
+            <img
+              class="w-14 h-[17px] md:w-[96px] md:h-[29px]"
+              src="./assets/desktop/spotify.svg"
+              alt="Spotify"
+            />
+            <img
+              class="w-[45px] h-[17px] md:w-[78px] md:h-[29px]"
+              src="./assets/desktop/apple-podcast.svg"
+              alt="Apple Podcast"
+            />
+            <img
+              class="w-[73px] h-[11px] md:w-[125px] md:h-[18px]"
+              src="./assets/desktop/google-podcasts.svg"
+              alt="Google Podcasts"
+            />
+            <img
+              class="w-[77px] h-[15px] md:w-[129px] md:h-[26px]"
+              src="./assets/desktop/pocket-casts.svg"
+              alt="Pocket Casts"
+            />
+          </section>
+          <form
+            name="myform"
+            class="flex flex-col gap-4 mt-12 relative md:mt-10"
+          >
+            <input
+              name="email"
+              type="text"
+              class="btn bg-[#2C344B] px-8 text-white font-bold md:w-[427px] md:h-14"
+              id="email"
+              placeholder="Email address"
+            />
+
+            <button
+              type="submit"
+              id="btn"
+              class="btn bg-[#54E6AF] text-[#121725] font-bold absolute top-[5px] left-[260px] md:w-[162px] hover:bg-[#B3FFE2]"
+            >
+              Request access
+            </button>
+            <section  id="validate">Oops! Please check your email</section>
+          </form>
+        </section>
+      </section>
+    </main>
+    <img
+      src="./assets/desktop/bg-pattern-dots.svg"
+      alt=""
+      class="hidden md:block md:absolute md:top-[920px] md:left-[30px] lg:top-[718px] lg:left-[1208px]"
+    />
+  </body>
+</html>

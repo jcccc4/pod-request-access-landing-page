@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    *{
+        @apply text-text font-chivo font-thin;
+    }
+  }
+  @layer components{
+    .btn{
+        @apply w-full h-[46px] rounded-full ;
+    }
+  }
